@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NH9 Ltd., Co.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Sarabun', sans-serif; }
+        .page-header { background: linear-gradient(45deg, #0c4a6e, #3b82f6); }
+        .cta-gradient-orange { background: linear-gradient(45deg, #f97316, #fb923c); }
+        .portfolio-card:hover .portfolio-image { transform: scale(1.05); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-3xl font-extrabold text-blue-600">NH9</div>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">หน้าแรก</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600">เกี่ยวกับเรา</a>
+                <a href="services.html" class="text-gray-600 hover:text-blue-600">บริการและผลิตภัณฑ์</a>
+                <a href="portfolio.html" class="text-gray-600 hover:text-blue-600">ผลงาน</a>
+                <a href="blog.html" class="text-blue-600 font-semibold border-b-2 border-blue-600">บทความ</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-600">ติดต่อเรา</a>
+            </div>
+            <a href="contact.html" class="hidden md:block cta-gradient-orange text-white font-bold py-2 px-6 rounded-full hover:shadow-lg hover:brightness-110 transition-all duration-300">
+                ขอใบเสนอราคา
+            </a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="page-header text-white">
+            <div class="container mx-auto px-6 py-16 text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold" data-aos="fade-up">บทความและข่าวสาร</h1>
+                <p class="text-lg text-blue-200 mt-2" data-aos="fade-up" data-aos-delay="100">อัปเดตเทรนด์และองค์ความรู้ในแวดวงอุตสาหกรรม</p>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group portfolio-card" data-aos="fade-up">
+                        <div class="overflow-hidden h-56">
+                            <img src="https://placehold.co/600x400/3B82F6/FFFFFF?text=AI+in+Industry" alt="Blog Post 1" class="w-full h-full object-cover portfolio-image transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <p class="text-sm text-blue-500 font-semibold">Technology</p>
+                            <h3 class="text-xl font-bold my-2">AI จะเข้ามาเปลี่ยนการจัดซื้อในโรงงานได้อย่างไร?</h3>
+                            <p class="text-gray-600 mb-4 line-clamp-3">สำรวจเทรนด์การใช้ปัญญาประดิษฐ์เพื่อวิเคราะห์ข้อมูลและเพิ่มประสิทธิภาพการจัดซื้อ...</p>
+                            <a href="#" class="font-semibold text-orange-500 hover:text-orange-700">อ่านต่อ &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group portfolio-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="overflow-hidden h-56">
+                            <img src="https://placehold.co/600x400/F97316/FFFFFF?text=Safety+First" alt="Blog Post 2" class="w-full h-full object-cover portfolio-image transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <p class="text-sm text-orange-500 font-semibold">Industrial Supplies</p>
+                            <h3 class="text-xl font-bold my-2">5 อุปกรณ์ PPE ที่ทุกโรงงานต้องมีในปี 2025</h3>
+                            <p class="text-gray-600 mb-4 line-clamp-3">ความปลอดภัยคือหัวใจสำคัญ อัปเดตลิสต์อุปกรณ์ป้องกันส่วนบุคคลที่จำเป็นตามมาตรฐานล่าสุด...</p>
+                            <a href="#" class="font-semibold text-orange-500 hover:text-orange-700">อ่านต่อ &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group portfolio-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="overflow-hidden h-56">
+                            <img src="https://placehold.co/600x400/3B82F6/FFFFFF?text=Energy+Saving" alt="Blog Post 3" class="w-full h-full object-cover portfolio-image transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <p class="text-sm text-blue-500 font-semibold">Facility Management</p>
+                            <h3 class="text-xl font-bold my-2">เทคนิคลดค่าไฟในโรงงานแบบง่ายๆ ที่คุณทำได้เอง</h3>
+                            <p class="text-gray-600 mb-4 line-clamp-3">พบกับเคล็ดลับการจัดการพลังงานที่จะช่วยลดต้นทุนให้ธุรกิจของคุณได้อย่างไม่น่าเชื่อ...</p>
+                            <a href="#" class="font-semibold text-orange-500 hover:text-orange-700">อ่านต่อ &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-800 text-white">
+        <div class="container mx-auto px-6 pt-16 pb-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-1">
+                    <h3 class="text-3xl font-extrabold text-white mb-4">NH9</h3>
+                    <p class="text-gray-400 mb-4">ผู้นำด้านการจัดหาสินค้าและบริการครบวงจรสำหรับอุตสาหกรรม</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">ลิงก์นำทาง</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">เกี่ยวกับเรา</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white">ผลงาน</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white">บทความ</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">บริการหลัก</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Industrial Supplies</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Facility Management</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">IT System Service</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">General Affairs Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">ข้อมูลติดต่อ</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start"><span class="mr-2 mt-1">&#9658;</span><span>66/1 หมู่ 2 ต.บางเพรียง อ.บางบ่อ จ.สมุทรปราการ 10560</span></li>
+                        <li class="flex items-start"><span class="mr-2 mt-1">&#9658;</span><span>sales@nh9.co.th</span></li>
+                        <li class="flex items-start"><span class="mr-2 mt-1">&#9658;</span><span>0X-XXXX-XXXX</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-slate-700 text-center text-gray-500">
+                <p>&copy; 2025 NH9 Ltd., Co. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({ duration: 800, once: true }); </script>
+</body>
+</html>

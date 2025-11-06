@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NH9 Ltd., Co.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Sarabun', sans-serif; }
+        .hero-gradient { background: linear-gradient(45deg, #0c4a6e, #3b82f6); }
+        .cta-gradient-blue { background: linear-gradient(45deg, #3b82f6, #60a5fa); }
+        .cta-gradient-orange { background: linear-gradient(45deg, #f97316, #fb923c); }
+        .card-hover-effect { transition: all 0.3s ease-in-out; }
+        .card-hover-effect:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+        .blob1 { position: absolute; top: -150px; left: -150px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(239, 246, 255, 0.8) 0%, rgba(239, 246, 255, 0) 70%); z-index: 0; border-radius: 50%; }
+        .blob2 { position: absolute; bottom: -100px; right: -150px; width: 350px; height: 350px; background: radial-gradient(circle, rgba(255, 237, 213, 0.7) 0%, rgba(255, 237, 213, 0) 70%); z-index: 0; border-radius: 50%; }
+        .text-gradient { background: -webkit-linear-gradient(45deg, #0c4a6e, #3b82f6); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .logo-interactive {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease-in-out;
+        }
+        .logo-interactive:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 overflow-x-hidden">
+
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-3xl font-extrabold text-blue-600">NH9</div>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-blue-600 font-semibold border-b-2 border-blue-600">หน้าแรก</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600">เกี่ยวกับเรา</a>
+                <a href="services.html" class="text-gray-600 hover:text-blue-600">บริการและผลิตภัณฑ์</a>
+                <a href="portfolio.html" class="text-gray-600 hover:text-blue-600">ผลงาน</a>
+                <a href="blog.html" class="text-gray-600 hover:text-blue-600">บทความ</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-600">ติดต่อเรา</a>
+            </div>
+            <a href="contact.html" class="hidden md:block cta-gradient-orange text-white font-bold py-2 px-6 rounded-full hover:shadow-lg hover:brightness-110 transition-all duration-300">
+                ขอใบเสนอราคา
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-gradient text-white relative">
+            <div class="container mx-auto px-6 py-24 md:py-32 text-center relative z-10">
+                <h1 data-aos="fade-down" class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-4">NH9: ยกระดับการจัดซื้อวัสดุสิ้นเปลืองด้วย Digital Service และ AI อัจฉริยะ</h1>
+                <p data-aos="fade-down" data-aos-delay="200" class="text-lg md:text-xl text-blue-100 mb-8 max-w-3xl mx-auto">โซลูชันครบวงจรสำหรับธุรกิจอุตสาหกรรม พร้อมบริการที่รวดเร็วและราคาที่เหนือกว่า</p>
+                <div data-aos="fade-up" data-aos-delay="400" class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="services.html" class="cta-gradient-blue text-white font-bold py-3 px-8 rounded-full hover:shadow-xl hover:brightness-110 transition-all duration-300 text-lg">
+                        ดูบริการทั้งหมด
+                    </a>
+                    <a href="contact.html" class="bg-white/20 backdrop-blur-sm text-white font-bold py-3 px-8 rounded-full hover:bg-white/30 transition-all duration-300 text-lg">
+                        ปรึกษาเราฟรี
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-8">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+                    <img src="imgs/Nippon-Paint-Logo.png" alt="Nippon Paint" class="h-10 md:h-12 logo-interactive">
+                    <img src="imgs/louis_logo.png" alt="Louis Tape" class="h-10 md:h-12 logo-interactive">
+                    <img src="https://placehold.co/150x60/FFFFFF/000000?text=Brand+B" alt="Brand B Logo" class="h-10 md:h-12 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-300">
+                    <img src="https://placehold.co/150x60/FFFFFF/000000?text=Brand+C" alt="Brand C Logo" class="h-10 md:h-12 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-300">
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-white relative">
+            <div class="blob1"></div>
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-gradient">บริการและผลิตภัณฑ์ของเรา</h2>
+                    <p class="text-lg text-gray-600 mt-4">โซลูชันครบวงจรที่ขับเคลื่อนธุรกิจของคุณไปข้างหน้า</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div data-aos="fade-up" data-aos-delay="100" class="bg-white rounded-xl p-8 text-center border-2 border-gray-100 card-hover-effect">
+                        <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Industrial Supplies</h3>
+                        <p class="text-gray-600 mb-4">จัดหาสินค้าสิ้นเปลือง, PPE, เทป และเคมีภัณฑ์คุณภาพสูง</p>
+                        <a href="services.html" class="font-semibold text-blue-600 hover:text-blue-800">ดูเพิ่มเติม &rarr;</a>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200" class="bg-white rounded-xl p-8 text-center border-2 border-gray-100 card-hover-effect">
+                        <div class="bg-orange-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-orange-500"><path d="M12 22v-6"></path><path d="M12 8V2"></path><path d="M4.93 4.93l4.24 4.24"></path><path d="M14.83 14.83l4.24 4.24"></path><path d="m2.81 16.81 4.24-4.24"></path><path d="m16.97 2.81-4.24 4.24"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Facility Management</h3>
+                        <p class="text-gray-600 mb-4">บริการดูแลระบบไฟฟ้าและระบบสาธารณูปโภคในโรงงาน</p>
+                        <a href="services.html" class="font-semibold text-orange-500 hover:text-orange-700">ดูเพิ่มเติม &rarr;</a>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="300" class="bg-white rounded-xl p-8 text-center border-2 border-gray-100 card-hover-effect">
+                        <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">IT System Service</h3>
+                        <p class="text-gray-600 mb-4">ดูแลและให้คำปรึกษาด้านระบบ IT, Network, และ Digital Database</p>
+                        <a href="services.html" class="font-semibold text-blue-600 hover:text-blue-800">ดูเพิ่มเติม &rarr;</a>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="400" class="bg-white rounded-xl p-8 text-center border-2 border-gray-100 card-hover-effect">
+                        <div class="bg-orange-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-orange-500"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">General Affairs Support</h3>
+                        <p class="text-gray-600 mb-4">บริการสนับสนุนงานธุรการทั่วไปและงานจัดซื้อจัดจ้างในโรงงาน</p>
+                        <a href="services.html" class="font-semibold text-orange-500 hover:text-orange-700">ดูเพิ่มเติม &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-blue-50 relative overflow-hidden">
+             <div class="blob2"></div>
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="pr-0 lg:pr-12" data-aos="fade-right">
+                        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-6">ทำไมต้องเลือก NH9?</h2>
+                        <p class="text-lg text-gray-600 mb-8">เราเป็นมากกว่าผู้จัดจำหน่าย แต่เป็นคู่ค้าที่ใช้เทคโนโลยีเพื่อสร้างความสำเร็จให้ธุรกิจของคุณ</p>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-12 w-12 rounded-full cta-gradient-blue text-white flex items-center justify-center shadow-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path></svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-xl font-bold">Digital & AI System</h4>
+                                    <p class="text-gray-600">บริหารการสั่งซื้อด้วยข้อมูล ลดต้นทุนและความผิดพลาดในการสต็อกสินค้า</p>
+                                </div>
+                            </div>
+                             <div class="flex items-start">
+                                <div class="flex-shrink-0 h-12 w-12 rounded-full cta-gradient-orange text-white flex items-center justify-center shadow-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-xl font-bold">บริการหลังการขายที่เป็นเลิศ</h4>
+                                    <p class="text-gray-600">ทีมงานผู้เชี่ยวชาญพร้อมให้คำปรึกษาและแก้ไขปัญหาอย่างรวดเร็ว</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10 lg:mt-0" data-aos="fade-left">
+                        <img src="imgs\ai_data.png" alt="Data and AI Visualization" class="rounded-lg shadow-2xl w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6" data-aos="fade-up">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900">เสียงตอบรับจากลูกค้าของเรา</h2>
+                </div>
+                <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="text-center">
+                        <img src="https://placehold.co/80x80/E0E7FF/3B82F6?text=SC" class="w-20 h-20 rounded-full mx-auto mb-4 border-4 border-white shadow-md">
+                        <p class="text-xl md:text-2xl text-gray-700 italic">"NH9 ช่วยให้ฝ่ายจัดซื้อของเราทำงานง่ายขึ้นมาก ระบบของพวกเขาวิเคราะห์ข้อมูลได้แม่นยำ ทำให้เราลดต้นทุนสินค้าสิ้นเปลืองไปได้ถึง 15% ในไตรมาสแรก ประทับใจมากครับ"</p>
+                        <div class="mt-6">
+                            <p class="font-bold text-lg">คุณสมชาย รักงานดี</p>
+                            <p class="text-gray-500">ผู้จัดการฝ่ายจัดซื้อ, บริษัท ออโต้พาร์ท จำกัด</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero-gradient text-white">
+            <div class="container mx-auto px-6 py-16 md:py-20 text-center">
+                <h2 data-aos="fade-up" class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">พร้อมยกระดับธุรกิจของคุณแล้วหรือยัง?</h2>
+                <p data-aos="fade-up" data-aos-delay="100" class="text-lg text-blue-200 mb-8 max-w-2xl mx-auto">ติดต่อทีมผู้เชี่ยวชาญของเราเพื่อรับคำปรึกษาและใบเสนอราคาที่ดีที่สุดสำหรับธุรกิจของคุณ</p>
+                <a data-aos="fade-up" data-aos-delay="200" href="contact.html" class="cta-gradient-orange text-white font-bold py-3 px-8 rounded-full hover:shadow-xl hover:brightness-110 transition-all duration-300 text-lg">
+                    ขอใบเสนอราคาตอนนี้
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-800 text-white">
+        <div class="container mx-auto px-6 pt-16 pb-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-1">
+                    <h3 class="text-3xl font-extrabold text-white mb-4">NH9</h3>
+                    <p class="text-gray-400 mb-4">ผู้นำด้านการจัดหาสินค้าและบริการครบวงจรสำหรับอุตสาหกรรม</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">ลิงก์นำทาง</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">เกี่ยวกับเรา</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white">ผลงาน</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white">บทความ</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">บริการหลัก</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Industrial Supplies</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Facility Management</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">IT System Service</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">General Affairs Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">ข้อมูลติดต่อ</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start"><span class="mr-2 mt-1">&#9658;</span><span>66/1 หมู่ 2 ต.บางเพรียง อ.บางบ่อ จ.สมุทรปราการ 10560</span></li>
+                        <li class="flex items-start"><span class="mr-2 mt-1">&#9658;</span><span>sales@nh9.co.th</span></li>
+                        <li class="flex items-start"><span class="mr-2 mt-1">&#9658;</span><span>081-372-8830</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-slate-700 text-center text-gray-500">
+                <p>&copy; 2025 NH9 Ltd., Co. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
+
+</body>
+</html>
